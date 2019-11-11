@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imagefield"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/imagefield" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagefield"
+        android:id="@+id/textabout"
+        android:layout_toRightOf="@id/logovertical"
+        android:src="@drawable/teks_version"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_about"
+        android:id="@+id/rectangle_about"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+
+    </ImageView>
+    
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teksabout"
+        android:layout_above="@+id/union"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/teks_about"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/about"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/rectangle_about"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="85dp">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/logovertical"
+        android:src="@drawable/vertical_logo"
+        android:layout_alignParentTop="true">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/union_1"
+        android:id="@+id/union"
+        android:layout_marginEnd="@android:dimen/app_icon_size"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+    </ImageView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginStart="90dp"
+        android:cropToPadding="true"
+        android:onClick="btn_topmenu"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/dashboard_icon_blue"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btn_uncheck"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="85dp"
+        android:cropToPadding="true"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/icons_4"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="90dp"
+        android:cropToPadding="true"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/glasses_grey"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>
